@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/date/date",
+    "pages/city/city"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "自定义组件",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#888888",
+    "selectedColor": "#e64340",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "组件",
+        "iconPath": "images/ic_component.png",
+        "selectedIconPath": "images/ic_component_selected.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/ic_about.png",
+        "selectedIconPath": "images/ic_about_selected.png"
+      }
+    ]
+  }
+}

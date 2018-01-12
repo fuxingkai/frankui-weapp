@@ -1,0 +1,31 @@
+<view wx:if="{{showPicker}}" class="date-picker">
+    <view class="date-picker-mask" catchtouchstart="onTouchmask"></view>
+    <view class="date-picker-content" catchtouchstart="onTouchmask">
+        <view class='date-picker-content-top' catchtouchstart="onTouchmask">
+            <view class="date-picker-content-cancel" hover-class="hover-class" catchtouchend="onCacnelClick">
+                取消
+            </view>
+            <view class="date-picker-content-sure"  hover-class="hover-class" catchtouchend="onSureClick">
+                确认
+            </view>
+        </view>
+        <view class="date-picker-content-line" catchtouchstart="onTouchmask"></view>
+        <view class="date-picker-content-center" catchtouchstart="onTouchmask">
+            <picker-view class="date-picker-content-item" indicator-style="height: 70rpx;" value="{{tempYearPos}}" bindchange="year_onChange">
+                <picker-view-column>
+                    <view wx:for="{{years}}" wx:key="*this" style="height: 70rpx; text-align:center; font-size: 36rpx; line-height:70rpx; color:#353535;">{{item}}年</view>
+                </picker-view-column>
+            </picker-view>
+            <picker-view class="date-picker-content-item" indicator-style="height: 70rpx; " value="{{tempMonthPos}}" bindchange="month_onChange">
+                <picker-view-column>
+                    <view wx:for="{{months}}" wx:key="*this" style="height: 70rpx; text-align:center;  font-size: 36rpx; line-height:70rpx; color:#353535;">{{item}}月</view>
+                </picker-view-column>
+            </picker-view>
+            <picker-view class="date-picker-content-item" indicator-style="height: 70rpx; " value="{{tempDayPos}}" bindchange="day_onChange">
+                <picker-view-column>
+                    <view wx:for="{{days}}" wx:key="*this" style="height: 70rpx; text-align:center;  font-size: 36rpx; line-height:70rpx; color:#353535;">{{item}}日</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+    </view>
+</view>

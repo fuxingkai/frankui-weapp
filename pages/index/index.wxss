@@ -1,0 +1,18 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line{
+  height: 10px;
+  background-color:red;
+}
+
+.item{
+  padding: 10rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 36rpx;
+}

@@ -1,0 +1,9 @@
+<!--pages/city/city.wxml-->
+<text>当前选择城市：{{city}}</text>
+<view  bindtap="showCityPicker" >选择城市</view>
+<city-picker
+    id="city-picker"
+    value="{{cityPickerValue}}" 
+    isShow="{{cityPickerIsShow}}"
+    bindsureclick="cityPickerOnSureClick"
+    bindcancelclick="cityPickerOnCancelClick" />

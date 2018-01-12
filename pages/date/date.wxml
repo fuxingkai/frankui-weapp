@@ -1,0 +1,8 @@
+<text>当前日期：{{date}}</text>
+<view bindtap="showDatePicker" >选择日期</view>
+<date-picker
+    id="date-picker"
+    value="{{datePickerValue}}" 
+    isShow="{{datePickerIsShow}}"
+    bindsureclick="datePickerOnSureClick"
+    bindcancelclick="datePickerOnCancelClick" />

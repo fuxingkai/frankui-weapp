@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "城市",
+    "backgroundColor": "#F5F5F5",
+    "backgroundTextStyle": "dark",
+    "usingComponents": {
+      "city-picker": "../../components/city-picker/city-picker"
+    }
+}

@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for="{{items}}" wx:key="{{item.id}}">
+    <navigator class="item" url="{{item.navigateUrl}}">{{item.title}}</navigator>
+  </block>
+</view>
