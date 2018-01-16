@@ -1,0 +1,15 @@
+<view class="flaot-container">
+    <view class="float-top">
+    </view>
+    <float-tab
+        items="{{tabs}}"
+        fixedBar="{{isShowFloatTab}}"
+        bindtabclick="clickTab"/>
+
+    <view wx:if="{{curTabId=='news'}}" class="tab_list_data">
+        <view>要闻</view>
+    </view>
+    <view wx:else class="tab_list_data">
+       <view>供需</view>
+    </view>
+</view>

@@ -1,0 +1,25 @@
+<import src="tab-item/tab-item.wxml" />
+<view class="ml_float_tab">
+    <view class="tab_container">
+        <block wx:for="{{items}}" wx:for-item="item" wx:key="{{item.id}}">
+            <view class="tab_item" bindtap="onTabItemClick" wx:key="{{item.id}}" data-tabs="{{item}}">
+                <template is="tab_item" data="{{item}}" />
+            </view>
+            <view wx:if="{{index !== items.length-1}}" class="tab_line"></view>
+        </block>
+    </view>
+    <view class="tab_bottom_line"></view>
+</view>
+<view wx:if="{{showFixedBar}}" class="float_container">
+    <view class="ml_float_tab">
+        <view class="tab_container">
+            <block wx:for="{{items}}" wx:for-item="item" wx:key="{{item.id}}">
+                <view class="tab_item" bindtap="onTabItemClick" wx:key="{{item.id}}" data-tabs="{{item}}">
+                    <template is="tab_item" data="{{item}}" />
+                </view>
+                <view wx:if="{{index !== items.length-1}}" class="tab_line"></view>
+            </block>
+        </view>
+        <view class="tab_bottom_line"></view>
+    </view>
+</view>

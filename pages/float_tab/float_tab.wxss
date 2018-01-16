@@ -1,0 +1,15 @@
+/* pages/float_tab/float_tab.wxss */
+.flaot-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.float-top{
+  height: 300rpx;
+  background-color: red;
+}
+
+.tab_list_data{
+  height: 2000rpx;
+  background-color: gray;
+}

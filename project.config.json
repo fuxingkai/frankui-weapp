@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.6.6",
 	"appid": "touristappid",
-	"projectname": "frankui",
+	"projectname": "frankyui-weapp",
 	"condition": {
 		"search": {
 			"current": -1,

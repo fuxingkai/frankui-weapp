@@ -1,0 +1,45 @@
+.tab_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 96rpx;
+}
+
+.tab_item_text_nor {
+    width: auto;
+    height: 96rpx;
+    line-height: 96rpx;
+    color: #353535;
+    font-size: 28rpx;
+    text-align: center;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+}
+
+.tab_item_text_select {
+    width: auto;
+    height: 96rpx;
+    line-height: 96rpx;
+    color: #ED373D;
+    font-size: 28rpx;
+    text-align: center;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    box-sizing: border-box;
+}
+
+.tab_item_bottom_line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30rpx;
+    z-index: 99;
+    background-color: #ED373D;
+    width: 60rpx;
+    height: 6rpx;
+}

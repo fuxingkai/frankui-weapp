@@ -2,15 +2,11 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.line{
-  height: 10px;
-  background-color:red;
 }
 
 .item{
+  width: 100%;
+  text-align: left;
   padding: 10rpx;
   height: 50rpx;
   line-height: 50rpx;
