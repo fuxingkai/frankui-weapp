@@ -5,7 +5,7 @@
 }
 
 .float-top{
-  height: 300rpx;
+  height: 104rpx;
   background-color: red;
 }
 

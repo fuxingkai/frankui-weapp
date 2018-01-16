@@ -1,6 +1,6 @@
 {
 
-  "navigationBarTitleText": "我的收藏",
+  "navigationBarTitleText": "滑动悬浮",
   "backgroundColor": "#FFFFFF",
   "backgroundTextStyle": "light",
   "enablePullDownRefresh": false,
