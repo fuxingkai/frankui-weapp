@@ -4,7 +4,8 @@
     "pages/about/about",
     "pages/date/date",
     "pages/city/city",
-    "pages/float_tab/float_tab"
+    "pages/float_tab/float_tab",
+    "pages/horizontal-scroll_tab/horizontal-scroll_tab"
   ],
   "window": {
     "backgroundTextStyle": "light",
