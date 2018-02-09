@@ -1,0 +1,7 @@
+<view class="column_chart_container">
+    <view class="column_chart_title_container">
+        <view class="column_chart_title_type">按渠道</view>
+        <view class="column_chart_title_unit">单位：次</view>
+    </view>
+    <canvas canvas-id="{{canvasData.canvasId}}" style="width:{{canvasData.canvasWidth}}px;height:{{canvasData.canvasHeight}}px;"  bindtouchstart="onTouchHandler" bindtouchmove="onTouchMoveHandler" bindtouchend="onTouchEndHandler" ></canvas>
+</view>

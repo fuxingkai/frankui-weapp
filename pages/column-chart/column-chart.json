@@ -1,0 +1,9 @@
+{
+
+  "navigationBarTitleText": "柱状图",
+  "backgroundColor": "#F5F5F5",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+        "column-chart": "../../components/column-chart/column-chart"
+  }
+}

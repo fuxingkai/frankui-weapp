@@ -11,5 +11,9 @@
 
 .tab_list_data{
   height: 2000rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   background-color: gray;
 }

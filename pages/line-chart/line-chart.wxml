@@ -1,0 +1,1 @@
+<line-chart id="line-chart" canvasData="{{lineCanvasData}}" />

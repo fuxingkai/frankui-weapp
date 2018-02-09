@@ -1,0 +1,1 @@
+ <column-chart id="column-chart" canvasData="{{columnCanvasData}}" />
