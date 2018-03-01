@@ -53,6 +53,27 @@ Page({
     updateData['columnCanvasData.canvasHeight'] = canvasHeight;
     updateData['columnCanvasData.enableScroll'] = true;
 
+    this.setData(updateData);
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    var updateData = {};
+
+    var columnYMax = 60;
+    var columnYMin = 0;
+
+    updateData['columnCanvasData.yAxis.minData'] = columnYMin;
+    updateData['columnCanvasData.yAxis.maxData'] = columnYMax;
     updateData['columnCanvasData.series'] = [{
       data: [32, 16, 5, 55, 43, 26, 22, 32, 22],
     }];
@@ -68,20 +89,6 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
@@ -92,7 +99,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    console.log("122222");
   },
 
   /**

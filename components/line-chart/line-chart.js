@@ -11,6 +11,13 @@ Component({
 
     data: {},
 
+    detached: function () {
+      lineChart = null;
+      this.setData({
+        canvasData: null,
+      });
+    },
+
     methods: {
         onItemsChange() {
             this.setData({

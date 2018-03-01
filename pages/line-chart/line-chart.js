@@ -54,6 +54,31 @@ Page({
     updateData['lineCanvasData.point'] = { size: rate * 4, isShow: false };
     updateData['lineCanvasData.canvasHeight'] = canvasHeight;
 
+ 
+    this.setData(updateData);
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    var systemInfo = app.systemInfo;
+    rate = systemInfo.screenWidth / 750;
+    var updateData = {};
+    canvasWidth = systemInfo.screenWidth - rate * 64;
+    canvasHeight = rate * 306 + rate * 44 + rate * 34 + rate * 22;
+
+    var yMax = 500;
+    var yMin = 0;
+    var xMax = 30;
+    var xMin = 0;
     var series = [{
       data: [
         { x: 0, y: 111, title: '111' },
@@ -96,20 +121,6 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
@@ -120,7 +131,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+    console.log("22222");
   },
 
   /**
