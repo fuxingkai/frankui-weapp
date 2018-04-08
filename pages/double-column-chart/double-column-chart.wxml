@@ -1,0 +1,1 @@
+<double-column-chart id="double-column-chart" canvasData="{{doubleColumnCanvasData}}" title="{{doubleColumnTitle}}" units="{{doubleColumnUnit}}"  />

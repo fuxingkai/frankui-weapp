@@ -10,7 +10,9 @@ var pageObj = {
       { id: 'floatTab', title: '3，悬浮控件', navigateUrl: '/pages/float_tab/float_tab' },
       { id: 'horizontal-scroll-tab', title: '4，横向滑动tab', navigateUrl: '/pages/horizontal-scroll_tab/horizontal-scroll_tab' },
       { id: 'line-chart', title: '5，折线区域图', navigateUrl: '/pages/line-chart/line-chart' },
-      { id: 'column-chart', title: '6，柱状图', navigateUrl: '/pages/column-chart/column-chart' }
+      { id: 'column-chart', title: '6，柱状图', navigateUrl: '/pages/column-chart/column-chart' },
+      { id: 'double-line-chart', title: '7，双折线区域图', navigateUrl: '/pages/double-line-chart/double-line-chart' },
+      { id: 'double-column-chart', title: '8，折线柱状双图', navigateUrl: '/pages/double-column-chart/double-column-chart' }
       ],
 
   },

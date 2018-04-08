@@ -1,0 +1,1 @@
+<double-line-chart id="double-line-chart" canvasData="{{doubleLineCanvasData}}" title="{{doubleLineTitle}}" units="{{doubleLineUnit}}"  />

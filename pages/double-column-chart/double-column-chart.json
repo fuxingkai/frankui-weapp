@@ -1,0 +1,9 @@
+{
+
+  "navigationBarTitleText": "折线图",
+  "backgroundColor": "#F5F5F5",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "double-column-chart": "../../components/double-column-chart/double-column-chart"
+  }
+}

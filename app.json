@@ -7,7 +7,9 @@
     "pages/float_tab/float_tab",
     "pages/horizontal-scroll_tab/horizontal-scroll_tab",
     "pages/line-chart/line-chart",
-    "pages/column-chart/column-chart"
+    "pages/column-chart/column-chart",
+    "pages/double-line-chart/double-line-chart",
+    "pages/double-column-chart/double-column-chart"
   ],
   "window": {
     "backgroundTextStyle": "light",

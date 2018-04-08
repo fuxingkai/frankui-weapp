@@ -1,52 +1,71 @@
 var chart = require('chart.js');
-var columnChart = null;
 Component({
-    properties: {
-        canvasData: {
-            type: Object,
-            value: {},
-            observer: "onItemsChange"
-        },
+  properties: {
+    canvasData: {
+      type: Object,
+      value: {},
+      observer: "onItemsChange"
     },
+    title: {
+      type: String,
+      value: '',
+      observer: "onTitleChange"
+    },
+    unit: {
+      type: String,
+      value: '',
+      observer: "onUnitChange"
+    }
+  },
 
-    data: {},
+  data: {
+    columnChart: null,
+  },
 
-    detached: function () { 
-      columnChart = null;
+  detached: function () {
+    this.data.columnChart = null;
+  },
+
+  methods: {
+    onItemsChange() {
       this.setData({
-        canvasData: null,
+        canvasData: this.data.canvasData
+      });
+      if (this.data.columnChart == null || this.data.columnChart == undefined) {
+        this.data.columnChart = new chart(this.data.canvasData, this);
+      } else {
+        this.data.columnChart.updateData(this.data.canvasData);
+      }
+    },
+    onTitleChange() {
+      this.setData({
+        title: this.data.title,
+      });
+
+    },
+    onUnitChange() {
+      this.setData({
+        unit: this.data.unit
       });
     },
-
-    methods: {
-        onItemsChange() {
-            this.setData({
-                canvasData: this.data.canvasData
-            });
-            if (columnChart == null || columnChart == undefined) {
-                columnChart = new chart(this.data.canvasData, this);
-            } else {
-                columnChart.updateData(this.data.canvasData);
-            }
-        },
-        onTouchHandler(e) {
-            if (columnChart != null) {
-                columnChart.scrollStart(e);
-            }
-            console.log('onTouchHandler1');
-        },
-        onTouchMoveHandler(e) {
-            if (columnChart != null) {
-                columnChart.scroll(e);
-            }
-            console.log('onTouchMoveHandler1');
-        },
-        onTouchEndHandler(e) {
-            if (columnChart != null) {
-                columnChart.scrollEnd(e);
-            }
-            console.log('onTouchEndHandler1');
-        },
-    }
+    onTouchHandler(e) {
+      if (this.data.columnChart != null) {
+        this.data.columnChart.touchstart(e);
+      }
+      // console.log('onTouchHandler1');
+    },
+    onTouchMoveHandler(e) {
+      if (this.data.columnChart != null) {
+        this.data.columnChart.touchmove(e);
+      }
+      // console.log('onTouchMoveHandler1');
+    },
+    onTouchEndHandler(e) {
+      if (this.data.columnChart != null) {
+        this.data.columnChart.touchend(e);
+      }
+      // console.log('onTouchEndHandler1');
+    },
+  }
 
 });

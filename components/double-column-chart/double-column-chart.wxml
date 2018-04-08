@@ -1,0 +1,10 @@
+<view class="column_chart_container">
+    <view class="column_chart_title_container">
+        <view class="column_chart_title_type">{{title}}</view>
+        <block wx:for="{{units}}" wx:for-item="item" wx:key="{{item.title}}">
+        	<view class="column_chart_unit_color" style="background-color: {{item.color}};"></view>
+        	<view class="column_chart_unit_title"> {{item.title}}</view>
+        </block>
+    </view>
+    <canvas canvas-id="{{canvasData.canvasId}}" style="width:{{canvasData.canvasWidth}}px;height:{{canvasData.canvasHeight}}px;" bindtouchstart="onTouchHandler" bindtouchmove="onTouchMoveHandler" bindtouchend="onTouchEndHandler" ></canvas>
+</view>
