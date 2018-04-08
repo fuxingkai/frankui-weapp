@@ -12,3 +12,7 @@
 ![1518158067(1).jpg](http://upload-images.jianshu.io/upload_images/4105840-f515ec31be548cc6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ### 柱状图
 ![2.gif](http://upload-images.jianshu.io/upload_images/4105840-084971b294b7f057.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+### 双折线图
+![1.gif](https://upload-images.jianshu.io/upload_images/4105840-0d0f5bee82778e38.gif?imageMogr2/auto-orient/strip)
+### 柱状折线图
+![2.gif](https://upload-images.jianshu.io/upload_images/4105840-45ead2bda34cd5b2.gif?imageMogr2/auto-orient/strip)
