@@ -1,5 +1,5 @@
 # frankui-weapp
-微信小程序自定义某些常用组件：
+## 微信小程序自定义某些常用组件：
 ### 自定义日期选择控件
 ![](http://img.blog.csdn.net/20180112175413578?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva2FpXzEyMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ### 自定义城市选择控件
@@ -16,3 +16,5 @@
 ![1.gif](https://upload-images.jianshu.io/upload_images/4105840-0d0f5bee82778e38.gif?imageMogr2/auto-orient/strip)
 ### 柱状折线图
 ![2.gif](https://upload-images.jianshu.io/upload_images/4105840-45ead2bda34cd5b2.gif?imageMogr2/auto-orient/strip)
+## 注意要点：
+1，由于部分功能小程序的基础库需要1.9.90才能使用，因此建议使用微信1.9.90以上的基础库
