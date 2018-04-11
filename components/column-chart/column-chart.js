@@ -50,19 +50,19 @@ Component({
     },
     onTouchHandler(e) {
       if (this.data.columnChart != null) {
-        this.data.columnChart.touchstart(e);
+        this.data.columnChart.scrollStart(e);
       }
       // console.log('onTouchHandler1');
     },
     onTouchMoveHandler(e) {
       if (this.data.columnChart != null) {
-        this.data.columnChart.touchmove(e);
+        this.data.columnChart.scroll(e);
       }
       // console.log('onTouchMoveHandler1');
     },
     onTouchEndHandler(e) {
       if (this.data.columnChart != null) {
-        this.data.columnChart.touchend(e);
+        this.data.columnChart.scrollEnd(e);
       }
       // console.log('onTouchEndHandler1');
     },
