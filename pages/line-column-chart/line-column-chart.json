@@ -1,6 +1,6 @@
 {
 
-  "navigationBarTitleText": "双柱状折线图",
+  "navigationBarTitleText": "折线图",
   "backgroundColor": "#F5F5F5",
   "backgroundTextStyle": "dark",
   "usingComponents": {

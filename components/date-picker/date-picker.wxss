@@ -1,86 +1,104 @@
+@keyframes fade-in {
+  0% {
+    top: 1000rpx;
+    opacity: 0;
+  }/*初始状态 透明度为0*/
+
+  40% {
+    top: 1000rpx;
+    opcity: 0;
+  }/*过渡状态 透明度为0*/
+
+  100% {
+    margin-top: 0rpx;
+    opacity: 1;
+  }/*结束状态 透明度为1*/
+}
+
 .date-picker {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  animation: fade-in 0.5s ease 1 forwards; 
 }
 
 .date-picker-mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #353535;
-    opacity: 0.3;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #353535;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 .date-picker-content {
-    position: absolute;
-    bottom: 64rpx;
-    left: 0;
-    width: 654rpx;
-    height: 474rpx;
-    margin-right: 48rpx;
-    margin-left: 48rpx;
-    border-radius: 8px;
-    background-color: #fff;
-    z-index: 33;
-    overflow: hidden;
+  position: absolute;
+  bottom: 64rpx;
+  left: 0;
+  width: 654rpx;
+  height: 474rpx;
+  margin-right: 48rpx;
+  margin-left: 48rpx;
+  border-radius: 8px;
+  background-color: #fff;
+  z-index: 33;
+  overflow: hidden;
 }
 
 .date-picker-content-top {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 112rpx;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 112rpx;
+  justify-content: space-between;
 }
 
-.hover-class{
-    background-color: #e6e6e6;
+.hover-class {
+  background-color: #e6e6e6;
 }
 
 .date-picker-content-line {
-    background-color: #d3dce6;
-    height: 1px;
-    width: 100%;
+  background-color: #d3dce6;
+  height: 1px;
+  width: 100%;
 }
 
 .date-picker-content-cancel {
-    line-height: 50rpx;
-    height: 50rpx;
-    font-size: 36rpx;
-    color: #353535;
-    padding: 30rpx 48rpx;
+  line-height: 50rpx;
+  height: 50rpx;
+  font-size: 36rpx;
+  color: #353535;
+  padding: 30rpx 48rpx;
 }
 
 .date-picker-content-sure {
-    line-height: 50rpx;
-    height: 50rpx;
-    font-size: 36rpx;
-    color: #ed373d;
-    padding: 30rpx 48rpx;
+  line-height: 50rpx;
+  height: 50rpx;
+  font-size: 36rpx;
+  color: #ed373d;
+  padding: 30rpx 48rpx;
 }
 
 .date-picker-content-center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 362rpx;
-    overflow: hidden;
-    margin-top: 6rpx;
-    margin-bottom: 6rpx;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 362rpx;
+  overflow: hidden;
+  margin-top: 6rpx;
+  margin-bottom: 6rpx;
+  justify-content: space-between;
 }
 
 .date-picker-content-item {
-    width: 33.3%;
-    height: 210rpx;
-    text-align: center;
+  width: 33.3%;
+  height: 210rpx;
+  text-align: center;
 }

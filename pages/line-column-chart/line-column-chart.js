@@ -12,14 +12,9 @@ Page({
       canvasId: 'doubleColumn',
     },
     doubleColumnTitle: "广告统计",
-    doubleColumnUnit: [{
-      color: "#13CE66",
-      title: "展现量"
-    },
-    {
-      color: "#FFA848",
-      title: "点击率"
-    }
+    doubleColumnUnit: [
+      { color: "#13CE66", title: "展现量" },
+      { color: "#FFA848", title: "点击率" }
     ]
   },
 
@@ -36,16 +31,8 @@ Page({
     var doubleColumnYMax = 0;
     var doubleColumnYMin = 0;
     updateData['doubleColumnCanvasData.canvasWidth'] = doubleColumnCanvasWidth;
-    updateData['doubleColumnCanvasData.axisPadd'] = {
-      left: rate * 10,
-      top: rate * 20,
-      right: rate * 10
-    };
-    updateData['doubleColumnCanvasData.axisMargin'] = {
-      bottom: rate * 32,
-      left: rate * 20,
-      right: rate * 20
-    };
+    updateData['doubleColumnCanvasData.axisPadd'] = { left: rate * 10, top: rate * 20, right: rate * 10 };
+    updateData['doubleColumnCanvasData.axisMargin'] = { bottom: rate * 32, left: rate * 20, right: rate * 20 };
     updateData['doubleColumnCanvasData.yAxis.fontSize'] = rate * 22;
     updateData['doubleColumnCanvasData.yAxis.fontColor'] = '#637280';
     updateData['doubleColumnCanvasData.yAxis.lineColor'] = '#DCE0E6';
@@ -71,12 +58,7 @@ Page({
     updateData['doubleColumnCanvasData.enableScroll'] = false;
 
 
-    updateData['doubleColumnCanvasData.point'] = {
-      bColor: "#FFA848",
-      sClor: "#FFFFFF",
-      size: rate * 4,
-      isShow: true
-    };
+    updateData['doubleColumnCanvasData.point'] = { bColor: "#FFA848", sClor: "#FFFFFF", size: rate * 4, isShow: true };
     updateData['doubleColumnCanvasData.touchDetail.width'] = rate * 144;
     updateData['doubleColumnCanvasData.touchDetail.height'] = rate * 149;
     updateData['doubleColumnCanvasData.touchDetail.fontSize'] = rate * 20;
@@ -91,81 +73,20 @@ Page({
 
     let doubleColumnSeries = {
       cloumnData: {
-        data: [{
-          axis: [{
-            x: "搜索类",
-            y: "100",
-            columnStartColor: "#3DB2FF",
-            columnEndColor: "#0077FF"
-          },
-          {
-            x: "搜索类",
-            y: "80",
-            columnStartColor: "#2BE99F",
-            columnEndColor: "#13CE66"
-          }
-          ],
-          x: '搜索类',
-          y: 100,
-          title: "搜索类|展现量10000|点击量:1000|点击率:10%"
-        },
-        {
-          axis: [{
-            x: "资讯类",
-            y: "930",
-            columnStartColor: "#3DB2FF",
-            columnEndColor: "#0077FF"
-          },
-          {
-            x: "资讯类",
-            y: "730",
-            columnStartColor: "#2BE99F",
-            columnEndColor: "#13CE66"
-          }
-          ],
-          x: '资讯类',
-          y: 930,
-          title: "资讯类|展现量:10000|点击量:1000|点击率:10%"
-        },
-        {
-          axis: [{
-            x: "社交类",
-            y: "430",
-            columnStartColor: "#3DB2FF",
-            columnEndColor: "#0077FF"
-          },
-          {
-            x: "社交类",
-            y: "530",
-            columnStartColor: "#2BE99F",
-            columnEndColor: "#13CE66"
-          }
-          ],
-          x: '社交类',
-          y: 430,
-          title: "社交类|展现量:10000|点击量:1000|点击率:10%"
-        },
+        data: [
+          { x: '搜索类', y: 100, title: "搜索类|展现量10000|点击量:1000|点击率:10%" },
+          { x: '资讯类', y: 930, title: "资讯类|展现量:10000|点击量:1000|点击率:10%" },
+          { x: '社交类', y: 430, title: "社交类|展现量:10000|点击量:1000|点击率:10%" },
 
         ],
         columnStartColor: "#2BE99F",
         columnEndColor: "#13CE66"
       },
       lineData: [{
-        data: [{
-          x: '搜索类',
-          y: 100,
-          title: ""
-        },
-        {
-          x: '资讯类',
-          y: 230,
-          title: ""
-        },
-        {
-          x: '社交类',
-          y: 430,
-          title: ""
-        },
+        data: [
+          { x: '搜索类', y: 100, title: "" },
+          { x: '资讯类', y: 230, title: "" },
+          { x: '社交类', y: 430, title: "" },
         ],
         lineColor: "#FFA848",
         point: {
@@ -176,21 +97,10 @@ Page({
         }
       }]
     };
-    let doubleColumnXAxisData = [{
-      x: '搜索类',
-      y: 0,
-      title: "搜索类"
-    },
-    {
-      x: '资讯类',
-      y: 0,
-      title: "资讯类"
-    },
-    {
-      x: '社交类',
-      y: 0,
-      title: "社交类"
-    },
+    let doubleColumnXAxisData = [
+      { x: '搜索类', y: 0, title: "搜索类" },
+      { x: '资讯类', y: 0, title: "资讯类" },
+      { x: '社交类', y: 0, title: "社交类" },
     ];
     let doubleColumnYAxisData = [];
     doubleColumnYMax = 1000;
@@ -248,10 +158,10 @@ Page({
   },
 
   /**
-   * 获得y轴最大值
-   * @param  {[type]} yMax 当前最大值
-   * @return {[type]}      [description]
-   */
+      * 获得y轴最大值
+      * @param  {[type]} yMax 当前最大值
+      * @return {[type]}      [description]
+      */
   getYMax: function (yMax) {
     let maxInt = Math.floor(yMax);
     let maxLength = maxInt.toString().length;
@@ -345,17 +255,3 @@ Page({
 
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-

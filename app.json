@@ -9,6 +9,7 @@
     "pages/line-chart/line-chart",
     "pages/column-chart/column-chart",
     "pages/double-line-chart/double-line-chart",
+    "pages/line-column-chart/line-column-chart",
     "pages/double-column-chart/double-column-chart"
   ],
   "window": {

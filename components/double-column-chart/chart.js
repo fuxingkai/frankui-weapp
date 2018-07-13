@@ -336,7 +336,7 @@ function measureText(text, fontSize) {
       width += 10;
     }
   });
-  return width * fontSize / 10;
+  return width * fontSize / 10 + 3;
 }
 
 //绘制y轴
@@ -388,7 +388,7 @@ function drawYAxis(opts, config, context) {
     context.setFontSize(config.yAxis.fontSize);
     context.setFillStyle(config.yAxis.fontColor);
     yRightAxis.forEach(function (item) {
-      let metricsContent = context.measureText(item.content).width;
+      let metricsContent = measureText(item.content, config.yAxis.fontSize);
       let rigthX = item.x + config.yAxis.dataWidth - metricsContent;
       context.fillText(item.content, rigthX, item.y);
     });
@@ -403,7 +403,7 @@ function drawYAxis(opts, config, context) {
  * 绘制数据区域
  */
 function drawColumn(series, opts, config, context) {
-  if (series == null || series == undefined) {
+  if (series == null || series == undefined || series.cloumnData == null || series.cloumnData.data == null) {
     return;
   }
   var padd = config.padd;
@@ -417,6 +417,8 @@ function drawColumn(series, opts, config, context) {
 
   var distance = 0;
   var realTouch = {};
+
+  var columnsData = [];
 
   var areaDatas = [];
   var columnColor = {};
@@ -435,7 +437,24 @@ function drawColumn(series, opts, config, context) {
       realTouch.title = item.title.split('|');
       distance = Math.abs(areaData.x - config.touchDetail.x);
     }
+
+    if (undefined != item.axis && item.axis != null) {
+      let columnSize = item.axis.length;
+      let columns = {};
+      let columnAreas = [];
+      item.axis.forEach(function (item1, index1) {
+        let columnArea = {};
+        columnArea.x = leftOffset + index * (config.xAxis.padd + config.xAxis.dataWidth) + index1 * config.xAxis.dataWidth / columnSize;
+        columnArea.y = topOffset + yAxisHeight - (item1.y - config.yAxis.minData) * config.yAxis.padd;
+        columnArea.startColor = item1.columnStartColor;
+        columnArea.endColor = item1.columnEndColor;
+        columnAreas.push(columnArea);
+      });
+      columns.columnAreas = columnAreas;
+      columnsData.push(columns);
+    }
   });
+
 
   context.save();
 
@@ -444,18 +463,37 @@ function drawColumn(series, opts, config, context) {
   startPoint.x = leftOffset;
   startPoint.y = topOffset + yAxisHeight;
 
-  //绘制数据连接点样式
-  context.beginPath();
-  areaDatas.forEach(function (item) {
-    let grd = context.createLinearGradient(item.x, item.y, item.x, startPoint.y)
-    grd.addColorStop(1, columnColor.startColor);
-    grd.addColorStop(0, columnColor.endColor);
+  if (columnsData.length < 1) {
+    //单柱状图
+    context.beginPath();
+    areaDatas.forEach(function (item) {
+      let grd = context.createLinearGradient(item.x, item.y, item.x, startPoint.y)
+      grd.addColorStop(1, columnColor.startColor);
+      grd.addColorStop(0, columnColor.endColor);
 
-    // Fill with gradient
-    context.setFillStyle(grd)
-    context.fillRect(item.x, item.y, config.xAxis.dataWidth, startPoint.y - item.y)
-  });
-  context.closePath();
+      // Fill with gradient
+      context.setFillStyle(grd)
+      context.fillRect(item.x, item.y, config.xAxis.dataWidth, startPoint.y - item.y)
+    });
+    context.closePath();
+  } else {
+    //多柱状图
+    columnsData.forEach(function (item) {
+      let columnSize = item.columnAreas.length;
+      item.columnAreas.forEach(function (item1) {
+        context.beginPath();
+        let grd = context.createLinearGradient(item1.x, item1.y, item1.x, startPoint.y)
+        grd.addColorStop(1, item1.startColor);
+        grd.addColorStop(0, item1.endColor);
+
+        // Fill with gradient
+        context.setFillStyle(grd)
+        context.fillRect(item1.x, item1.y, config.xAxis.dataWidth / columnSize, startPoint.y - item1.y)
+        context.closePath();
+      });
+    });
+  }
+
 
   if (series.lineData != null && series.lineData != undefined) {
     var lines = [];
@@ -725,6 +763,8 @@ Charts.prototype.updateData = function (opts) {
   this.config = util.extend(true, {}, this.config, opts);
   this.config.xAxis.data = opts.xAxis != undefined && opts.xAxis != null && opts.xAxis.data != null && opts.xAxis.data != undefined ? opts.xAxis.data : this.config.xAxis.data;
   this.config.yAxis.data = opts.yAxis != undefined && opts.yAxis != null && opts.yAxis.data != undefined && opts.yAxis.data != null ? opts.yAxis.data : this.config.yAxis.data;
+  this.config.yAxis.rightData = opts.yAxis != undefined && opts.rightData != null && opts.yAxis.rightData != undefined && opts.yAxis.rightData != null ? opts.yAxis.rightData : this.config.yAxis.rightData;
+
   this.config.series = opts.series != undefined && opts.series != null ? opts.series : this.config.series;
   this.opts.series = opts.series != undefined && opts.series != null ? opts.series : this.opts.series;
 
