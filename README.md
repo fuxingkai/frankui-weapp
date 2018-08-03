@@ -16,6 +16,8 @@
 ![1.gif](https://upload-images.jianshu.io/upload_images/4105840-0d0f5bee82778e38.gif?imageMogr2/auto-orient/strip)
 #### 柱状折线图
 ![2.gif](https://upload-images.jianshu.io/upload_images/4105840-45ead2bda34cd5b2.gif?imageMogr2/auto-orient/strip)
+#### 双柱状图
+![1533287431(1).jpg](https://upload-images.jianshu.io/upload_images/4105840-5b2a555695720ba6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 #### 刻度盘
 ![1533286279(1).jpg](https://upload-images.jianshu.io/upload_images/4105840-1f0bec256b7b7ddc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ### 注意要点：
