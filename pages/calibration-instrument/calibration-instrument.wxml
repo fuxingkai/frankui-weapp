@@ -1,0 +1,1 @@
+<calibration-instrument id="instrument" canvasData="{{instrumentData}}" />

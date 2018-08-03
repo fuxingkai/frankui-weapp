@@ -1,0 +1,9 @@
+{
+
+  "navigationBarTitleText": "刻度盘",
+  "backgroundColor": "#F5F5F5",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "calibration-instrument": "../../components/calibration-instrument/calibration-instrument"
+  }
+}
