@@ -1,0 +1,6 @@
+<view class="tab_container">
+    <view class="tab_item" style="width:{{100/tab_datas.length}}%" wx:for="{{tab_datas}}" wx:for-item="item" bindtap="onTabItemClick" wx:key="{{item.id}}" data-tabs="{{item}}">
+        <view class="{{item.isSelect?'tab_item_checked':'tab_item_normal'}}">{{item.title}}</view>
+         <view wx:if="{{item.isSelect}}" class="tab-line"></view>
+    </view>
+</view>

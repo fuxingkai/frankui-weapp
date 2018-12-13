@@ -1,0 +1,21 @@
+<view class="container">
+    <block wx:if="{{dateType!='custom'}}">
+        <view class="seletion" bindtap="onClickPre">
+            <image class="letf_arrow" src="{{preEnable?'../../images/ic_left_black_arrow.png':'../../images/ic_left_gray_arrow.png'}}" />
+            <view class="{{preEnable?'date_enable':'date_disable'}}">{{preText}}</view>
+        </view>
+        <view class="content">{{content}}</view>
+        <view class="seletion" bindtap="onClickNext">
+            <view class="{{nextEable?'date_enable':'date_disable'}}">{{nextText}}</view>
+            <image class="right_arrow" src="{{nextEable?'../../images/ic_right_black_arrow.png':'../../images/ic_right_gray_arrow.png'}}" />
+        </view>
+    </block>
+    <block wx:else>
+        <view class="select_date" bindtap="onClickSelectStart">{{callbackDate.startDate}}</view>
+        <view class="select_center" bindtap="onClickSelectStart">至</view>
+        <view class="select_date" bindtap="onClickSelectEnd">{{callbackDate.endDate}}</view>
+        <view class="{{queryEable?'query':'query_disable'}}" bindtap="onClickQuery">查询</view>
+    </block>
+    <date-picker id="start_date_picker" value="{{startDatePickerValue}}" isShow="{{startDatePickerIsShow}}" bindsureclick="onClickSureDatePicker" bindcancelclick="onClickCancelDatePicker" />
+    <date-picker id="end_date_picker" value="{{endDatePickerValue}}" isShow="{{endDatePickerIsShow}}" bindsureclick="onClickSureDatePicker" bindcancelclick="onClickCancelDatePicker" />
+</view>

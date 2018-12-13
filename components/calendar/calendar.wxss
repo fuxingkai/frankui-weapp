@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    height: 96rpx;
+    padding-left: 32rpx;
+    padding-right: 32rpx;
+}
+
+.seletion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.letf_arrow,.right_arrow{
+    width: 15rpx;
+    height: 25rpx;
+    flex-shrink: 0;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+}
+
+.date_enable,.date_disable{
+    flex-shrink: 0;
+    font-size: 20rpx;
+}
+
+.date_enable{
+    color: #8A96A0;
+}
+
+.date_disable{
+    color: #CCCCCC;
+}
+
+.content{
+    flex-grow: 1;
+    text-align: center;
+    clear: #8A96A0FF;
+    font-size: 28rpx;
+    font-weight: 500;
+}
+
+.select_date{
+    background-color: #F9FAFBFF;
+    border-radius:30rpx;
+    height: 52rpx;
+    width: 220rpx;
+    font-size: 22rpx;
+    line-height: 52rpx;
+    text-align: center;
+    color: #555555FF;
+    font-weight: 600;
+}
+.select_center{
+    font-size: 22rpx;
+    line-height: 52rpx;
+    text-align: center;
+    color: #8A96A0FF;
+    flex-grow: 1;
+}
+
+.query,.query_disable{
+    border-radius:30rpx;
+    height: 52rpx;
+    width: 120rpx;
+    font-size: 24rpx;
+    line-height: 52rpx;
+    text-align: center;
+    color: #FFFFFFFF;
+    font-weight: 600;
+    margin-left: 32rpx;
+}
+
+.query{
+    background-color: #0077FFFF;
+}
+
+.query_disable{
+    background-color: #CCCCCCFF;
+    color: #FFFFFFFF;
+}

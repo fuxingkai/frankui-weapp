@@ -1,0 +1,12 @@
+{
+  "navigationBarBackgroundColor": "#1F2D3D",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "日，周，月，季度，自定义周期选择器",
+  "backgroundColor": "#FFFFFF",
+  "backgroundTextStyle": "black",
+  "usingComponents": {
+    "tab-cycle": "../../components/tab-cycle/tab-cycle",
+    "call-staticstics-cycle": "../../components/call-staticstics-cycle/call-staticstics-cycle"
+  },
+  "enablePullDownRefresh": false
+}

@@ -55,6 +55,10 @@ var pageObj = {
         id: 'progress-bar',
         title: '11，进度条',
         navigateUrl: '/pages/progress-bar/progress-bar'
+      }, {
+        id: 'cycle-select',
+        title: '12，日，周，月，季度，自定义周期选择器',
+        navigateUrl: '/pages/call-statistics/call-statistics'
       }
     ],
 

@@ -1,0 +1,18 @@
+<view class="index_container">
+  <tab-cycle id="tab-cycle-call-statistics" cur_tab_id="{{cycleId}}" bindtabclick="onClickTabCycle" />
+  <view hidden="{{cycleId !='day'}}">
+    <call-staticstics-cycle id="call-staticstics-cycle_day" dateType="{{'day'}}" />
+  </view>
+  <view hidden="{{cycleId !='weeks'}}">
+    <call-staticstics-cycle id="call-staticstics-cycle_weeks" dateType="{{'weeks'}}" hidden="{{cycleId =='weeks'}}" />
+  </view>
+  <view hidden="{{cycleId !='month'}}">
+    <call-staticstics-cycle id="call-staticstics-cycle_month" dateType="{{'month'}}" hidden="{{cycleId =='month'}}" />
+  </view>
+  <view hidden="{{cycleId !='quarter'}}">
+    <call-staticstics-cycle id="call-staticstics-cycle_quarter" dateType="{{'quarter'}}" hidden="{{cycleId ==='quarter'}}" />
+  </view>
+  <view hidden="{{cycleId !='custom'}}">
+    <call-staticstics-cycle id="call-staticstics-cycle_customer" dateType="{{'custom'}}" hidden="{{cycleId =='custom'}}" />
+  </view>
+</view>
