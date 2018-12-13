@@ -1,0 +1,9 @@
+{
+
+  "navigationBarTitleText": "进度条",
+  "backgroundColor": "#F5F5F5",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "progress-bar": "../../components/progress-bar/progress-bar"
+  }
+}

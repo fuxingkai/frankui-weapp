@@ -1,0 +1,33 @@
+.line_chart_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42rpx 32rpx 56rpx;
+}
+.line_chart_title_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28rpx;
+  width: 100%;
+}
+.line_chart_title_type {
+  line-height: 34rpx;
+  font-size: 24rpx;
+  text-align: left;
+  flex-grow: 1;
+  color: #1A173B;
+}
+.line_chart_unit_color {
+  width: 32rpx;
+  height: 10rpx;
+  margin: 0 12rpx 0 38rpx;
+}
+.line_chart_unit_title {
+  line-height: 28rpx;
+  font-size: 20rpx;
+  text-align: right;
+  color: #8A96A0;
+}

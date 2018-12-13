@@ -11,7 +11,8 @@
     "pages/double-line-chart/double-line-chart",
     "pages/line-column-chart/line-column-chart",
     "pages/double-column-chart/double-column-chart",
-    "pages/calibration-instrument/calibration-instrument"
+    "pages/calibration-instrument/calibration-instrument",
+    "pages/progress-bar/progress-bar"
   ],
   "window": {
     "backgroundTextStyle": "light",

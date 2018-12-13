@@ -51,8 +51,11 @@ var pageObj = {
         id: 'calibration-instrument',
         title: '10，刻度盘',
         navigateUrl: '/pages/calibration-instrument/calibration-instrument'
+      }, {
+        id: 'progress-bar',
+        title: '11，进度条',
+        navigateUrl: '/pages/progress-bar/progress-bar'
       }
-
     ],
 
   },
