@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "record-item":"/components/record-item/record-item",
+        "common-list":"/components/common-list/common-list"
+    }
+}
+   

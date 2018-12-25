@@ -1,0 +1,12 @@
+{
+  "navigationBarBackgroundColor": "#1F2D3D",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "通用list分页加载，加载更多组件和音频播放结合使用demo",
+  "backgroundColor": "#FFFFFF",
+  "backgroundTextStyle": "black",
+  "usingComponents": {
+    "tab-call-status": "/components/tab-cycle/tab-cycle",
+    "record-list": "/components/record-tab-list/record-tab-list"
+  },
+  "enablePullDownRefresh": false
+}

@@ -39,4 +39,30 @@ App({
    * 系统信息
    */
   systemInfo: null,//系统信息
+
+
+  /**
+   * 音频播放上下文
+   */
+  audioContext: null,
+
+  /**
+   * 获取当前音频上下文
+   */
+  getAudioContext: function getAudioContext() {
+    if (this.audioContext == null) {
+      this.audioContext = wx.createInnerAudioContext();
+    }
+    return this.audioContext;
+  },
+
+  /**
+   * 摧毁当前音频上下文
+   */
+  destroyAudioContext: function destroyAudioContext() {
+    if (this.audioContext != null) {
+      this.audioContext.stop();
+      this.audioContext.destroy
+    }
+  },
 })

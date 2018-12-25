@@ -1,0 +1,78 @@
+.container, .content_container, .content,.play_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.content_container {
+  width: 100%;
+  flex-direction: row;
+  padding: 32rpx;
+}
+
+.content {
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  color: #333333FF;
+  font-size: 32rpx;
+  font-weight: 500;
+  margin-bottom: 8rpx;
+  line-height: 44rpx;
+}
+
+.des, .time {
+  width: 100%;
+  color: #BBBBBBFF;
+  font-size: 24rpx;
+  font-weight: 500;
+  line-height: 36rpx;
+}
+
+.play_icon {
+  width: 60rpx;
+  height: 60rpx;
+  flex-shrink: 0;
+  margin-left: 10rpx;
+}
+
+.play_container {
+  background-color: #F9FAFBFF;
+  width: 100%;
+  flex-direction: row;
+  padding: 24rpx 32rpx;
+}
+
+
+.cur_time{
+  flex-shrink: 0;
+  color: #BBBBBBFF;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  margin-right: 30rpx;
+}
+
+.record_slider{
+  flex-grow: 1;
+  margin: 0;
+}
+
+.pre ,.next{
+  width: 20rpx;
+  height: 16rpx;
+  flex-shrink: 0;
+  margin-left: 28rpx;
+}
+
+.line{
+  width: 100%;
+  background-color: #EEEEEEFF;
+  height: 2rpx;
+}

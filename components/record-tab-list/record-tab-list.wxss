@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .record_total{
+    background-color: #F9FAFBFF;
+    font-size: 24rpx;
+    color: #8A96A0FF;
+    line-height: 34rpx;
+    height: 76rpx;
+    box-sizing: border-box;
+    padding: 22rpx 30rpx;
+  }

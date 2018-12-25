@@ -1,0 +1,19 @@
+<view class="container">
+  <tab-call-status class="tab" id="tab-call-status" cur_tab_id="{{tabStatusId}}" tab_datas="{{tabStatus}}" bindtabclick="onClickTabStatus" />
+  <view class="search_container" bindtap="onToSearchClick">
+    <image class="letf_search" src="{{'../../images/ic_search.png'}}" />
+    <view class="text">搜索关键词</view>
+  </view>
+  <view hidden="{{tabStatusId !='all'}}">
+    <record-list data="{{recordListData}}" onReachBottom="{{onReachBottom}}" tab="{{'all'}}" parentTab="{{tabStatusId}}" />
+  </view>
+  <view hidden="{{tabStatusId !='hasAnswer'}}">
+    <record-list data="{{recordListData}}"  onReachBottom="{{onReachBottom}}" tab="{{'hasAnswer'}}" parentTab="{{tabStatusId}}"/>
+  </view>
+  <view hidden="{{tabStatusId !='hasArchive'}}">
+    <record-list data="{{recordListData}}"  onReachBottom="{{onReachBottom}}" tab="{{'hasArchive'}}" parentTab="{{tabStatusId}}"/>
+  </view>
+  <view hidden="{{tabStatusId !='noAnswer'}}">
+    <record-list data="{{recordListData}}"  onReachBottom="{{onReachBottom}}" tab="{{'noAnswer'}}" parentTab="{{tabStatusId}}"/>
+  </view>
+</view>

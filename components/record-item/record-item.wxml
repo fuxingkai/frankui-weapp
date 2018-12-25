@@ -1,0 +1,17 @@
+<view class="container">
+    <view class="content_container">
+        <view class="content">
+            <view class="title">{{item.phone+'('+item.name+')'}}</view>
+            <view class="des">{{item.type + ' | 接电员 : ' + item.rPersonnel + ' | 通话时间：' + item.duration}} </view>
+            <view class="time">{{item.creatTime}}</view>
+        </view>
+        <image class="play_icon" data-item="{{item}}" src="{{item.isPlay?'/images/ic_record_pause.png':'/images/ic_record_play.png'}}" bindtap="onClickPlay" />
+    </view>
+    <view class="play_container" wx:if="{{item.isPlay}}">
+        <view class="cur_time">{{curTime}}</view>
+        <slider class="record_slider" bindchange="onRecordSliderListener" value="{{sliderValue}}" block-size="12" block-color="#00000000"  activeColor="#DDDDDDFF" backgroundColor="#EEEEEEFF"/>
+        <image class="pre" src="{{'/images/ic_record_pre.png'}}"  bindtap="onClickPre" />
+        <image class="next" src="{{'/images/ic_record_next.png'}}"  bindtap="onClickNext"  />
+    </view>
+    <view class="line"></view>
+</view>

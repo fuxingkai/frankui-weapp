@@ -13,7 +13,8 @@
     "pages/double-column-chart/double-column-chart",
     "pages/calibration-instrument/calibration-instrument",
     "pages/progress-bar/progress-bar",
-    "pages/call-statistics/call-statistics"
+    "pages/call-statistics/call-statistics",
+    "pages/call-statistics-detail/call-statistics-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

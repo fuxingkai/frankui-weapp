@@ -1,0 +1,24 @@
+<template name="list-footer-view">
+    <view wx:if="{{ enableLoadMore }}" class="loadmore_parent">
+        <view class="loadmore" wx:if="{{ hasMore ? hasMore : false }}">
+            <image class="loading" src="../../images/loading.svg"></image>
+        </view>
+        <view wx:else class="loadmore-end">
+            <view class="loadmore-tip">
+                <view class="loadmore-end-line" />
+                <view class="loadmore-end-tip">
+                    {{(listNoMoreDataTip ? listNoMoreDataTip : '没有更多内容了')}}
+                </view>
+                <view class="loadmore-end-line" />
+            </view>
+        </view>
+    </view>
+</template>
+<view class="container">
+    <block wx:if="{{list !== null && list.length !== 0}}">
+        <block wx:for="{{list}}" wx:for-item="item" wx:key="{{index}}">
+            <list-item item="{{item}}" index="{{index}}" bindonClickItem="onClickItem" />
+        </block>
+        <template is="list-footer-view" data="{{enableLoadMore:enableLoadMore,hasMore:hasMore}}" />
+    </block>
+</view>
