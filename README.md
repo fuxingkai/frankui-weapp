@@ -24,6 +24,8 @@
 ![2.gif](https://upload-images.jianshu.io/upload_images/4105840-0fb8e210ede5ea40.gif?imageMogr2/auto-orient/strip)
 #### list分页加载组件和音频api使用
 ![2.gif](https://upload-images.jianshu.io/upload_images/4105840-80cf9692faf4491b.gif?imageMogr2/auto-orient/strip)
+#### 通用搜索
+![2.gif](https://upload-images.jianshu.io/upload_images/4105840-cb77e09066f5ba26.gif?imageMogr2/auto-orient/strip)
 
 ### 注意要点：
 1，由于部分功能小程序的基础库需要1.9.90才能使用，因此建议使用微信1.9.90以上的基础库
