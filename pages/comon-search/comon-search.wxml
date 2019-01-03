@@ -1,0 +1,6 @@
+<view class="container">
+  <common-search id="call-statistics-search" class="search_container" bindonClickSubmit="onClickSearchSubmit" />
+  <view hidden="{{false}}">
+    <record-list id="record-list-all" data="{{recordListData}}" onReachBottom="{{onReachBottom}}" pageScroll="{{pageScroll}}" tab="{{'all'}}" parentTab="{{tabStatusId}}"  />
+  </view>
+</view>

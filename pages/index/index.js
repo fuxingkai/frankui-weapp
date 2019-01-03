@@ -63,6 +63,10 @@ var pageObj = {
         id: 'cycle-select',
         title: '13，通用list分页加载，加载更多组件和音频播放结合使用demo',
         navigateUrl: '/pages/call-statistics-detail/call-statistics-detail?startDate=2018-11-11&endDate=2018-11-11',
+      }, {
+        id: 'comon-search',
+        title: '14，通用搜索',
+        navigateUrl: '/pages/comon-search/comon-search?startDate=2018-11-11&endDate=2018-11-11',
       }
     ],
 

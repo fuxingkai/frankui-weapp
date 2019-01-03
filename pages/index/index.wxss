@@ -8,7 +8,6 @@
   width: 100%;
   text-align: left;
   padding: 10rpx;
-  height: 50rpx;
   line-height: 50rpx;
   font-size: 36rpx;
 }

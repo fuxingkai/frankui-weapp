@@ -1,0 +1,98 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 120rpx;
+    flex-direction: row;
+    padding: 22rpx 32rpx;
+}
+
+
+.search_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F9FAFBFF;
+    border-radius:38rpx;
+    height: 76rpx;
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 20rpx 20rpx;
+    margin-right: 46rpx;
+  }
+  
+  .letf_search{
+    width: 24rpx;
+    height: 24rpx;
+    flex-shrink: 0;
+    margin-right: 20rpx;
+  }
+
+  .input_delete{
+    width: 40rpx;
+    height: 40rpx;
+    flex-shrink: 0;
+    margin-left: 20rpx;
+  }
+  
+  .search_input{
+    font-size: 24rpx;
+    color: #333333FF;
+    flex-grow: 1;
+  }
+
+  .search_placeholder{
+    font-size: 24rpx;
+    color: #999999FF;
+  }
+
+.search_btn{
+    line-height: 40rpx;
+    font-size: 28rpx;
+    flex-shrink: 0;
+    padding: 24rpx 0;
+    text-align: center;
+    color: #1A173BFF;
+    font-weight: bold;
+}
+
+.tab_item {
+    flex-direction: column;
+    position: relative;
+}
+
+.tab_item_checked, .tab_item_normal, .tab_title {
+    width: 100%;
+    line-height: 48rpx;
+    font-size: 28rpx;
+    flex-grow: 1;
+    padding: 24rpx 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-bottom: 1px solid #dce0e6
+}
+
+.tab_item_checked {
+    color: #0077FF;
+}
+
+.tab_item_normal {
+    color: #1A173B;
+}
+
+.tab-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25rpx;
+    z-index: 99;
+    background-color: #0077FF;
+    width: 50rpx;
+    height: 6rpx;
+}

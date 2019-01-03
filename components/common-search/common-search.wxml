@@ -1,0 +1,8 @@
+<view class="container">
+    <view class="search_container">
+        <image class="letf_search" src="{{'/images/ic_search.png'}}" bindtap="onClickSearch"/>
+        <input placeholder="搜索关键词" class="search_input" bindconfirm="bindConfirmSearch" value="{{searchValue}}" bindinput="bindSearchInput" placeholder-class="search_placeholder" auto-focus />
+        <image class="input_delete" hidden="{{content.length<1}}" src="{{'/images/ic_input_delete.png'}}" bindtap="onClickClear" />
+    </view>
+    <view class="search_btn" bindtap="onClickSearch">搜索</view>
+</view>

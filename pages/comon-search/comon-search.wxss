@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 120rpx;
+  box-sizing: border-box;
+}
+
+.search_container{
+  position: fixed;
+  width: 100%;
+  /*悬停关键样式*/
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+
+
+
+
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
