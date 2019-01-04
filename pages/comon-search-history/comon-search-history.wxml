@@ -1,0 +1,3 @@
+<view class="container">
+  <search-history id="call-statistics-search" historyKey="{{'call-statistics-search-history'}}" class="search_container" bindonClickSubmit="onClickSearchSubmit" />
+</view>

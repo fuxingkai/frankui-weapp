@@ -1,0 +1,14 @@
+<view class="container">
+    <block wx:if="{{list !== null && list.length !== 0}}">
+        <block wx:for="{{list}}" wx:for-item="item" wx:key="{{index}}">
+            <view class="history_item_container" data-item="{{item}}"  bindtap="onClickItem">
+                <view class="history_item_content">{{item}}</view>
+                <image class="right_arrow" src="{{'/images/ic_right_gray_arrow.png'}}" />
+            </view>
+        </block>
+         <view class="clear_history_container" bindtap="onClickClear">
+                <image class="clear" src="{{'/images/ic_search_delete.png'}}" />
+                <view class="cleart_text">清空搜索记录</view>
+            </view>
+    </block>
+</view>

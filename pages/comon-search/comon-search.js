@@ -50,7 +50,7 @@ Page({
     onClickSearchSubmit: function onClickSearchSubmit(e) {
         console.log(e);
         wx.showToast({
-          title: '搜索',
+          title: '搜索' + e.detail.content,
           icon:'none'
         })
     },

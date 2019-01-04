@@ -15,7 +15,8 @@
     "pages/progress-bar/progress-bar",
     "pages/call-statistics/call-statistics",
     "pages/call-statistics-detail/call-statistics-detail",
-    "pages/comon-search/comon-search"
+    "pages/comon-search/comon-search",
+    "pages/comon-search-history/comon-search-history"
   ],
   "window": {
     "backgroundTextStyle": "light",

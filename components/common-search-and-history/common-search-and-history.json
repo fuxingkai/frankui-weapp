@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "common-search": "/components/common-search/common-search",
+        "common-search-history": "/components/common-search-history/common-search-history"
+    }
+}

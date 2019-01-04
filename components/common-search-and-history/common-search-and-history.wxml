@@ -1,0 +1,6 @@
+<view class="container">
+  <common-search id="call-statistics-search" bindonClickSubmit="onClickSearchSubmit" bindonSearchInputChange="onSearchInputChange"/>
+  <view hidden="{{isHiddenHistory}}">
+    <common-search-history id="call-statistics-search-history" list="{{historyList}}" bindonClickItem="onClickHistoryItem" bindonClickClearHistory="onClickClearHistory" />
+  </view>
+</view>

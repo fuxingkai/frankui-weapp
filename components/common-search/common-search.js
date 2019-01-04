@@ -27,12 +27,14 @@ Component({
             this.setData({
                 content: e.detail.value
             })
+            this.triggerEvent('onSearchInputChange', { content: e.detail.value});
         },
         onClickClear: function onClickClear(e) {
             this.setData({
                 searchValue:'',
                 content:''
             });
+            this.triggerEvent('onSearchInputChange', { content: this.data.content});
         },    
         bindConfirmSearch: function bindConfirmSearch(e) {
             this.triggerEvent('onClickSubmit', { content: e.detail.value});
