@@ -3,7 +3,7 @@
   "navigationBarTextStyle": "white",
   "navigationBarTitleText": "搜索",
   "backgroundColor": "#FFFFFF",
-  "backgroundTextStyle": "black",
+  "backgroundTextStyle": "dark",
   "usingComponents": {
     "common-search": "/components/common-search/common-search",
     "record-list": "/components/record-tab-list/record-tab-list"
