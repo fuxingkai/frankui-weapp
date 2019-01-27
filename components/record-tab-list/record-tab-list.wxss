@@ -9,7 +9,7 @@
   }
 
   .record_total{
-    background-color: #F9FAFBFF;
+    background-color: #F9FAFB;
     font-size: 24rpx;
     color: #8A96A0FF;
     line-height: 34rpx;

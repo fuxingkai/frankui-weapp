@@ -2,7 +2,7 @@
   "navigationBarBackgroundColor": "#1F2D3D",
   "navigationBarTextStyle": "white",
   "navigationBarTitleText": "搜索",
-  "backgroundColor": "#F8F9FAFF",
+  "backgroundColor": "#F8F9FA",
   "backgroundTextStyle": "dark",
   "usingComponents": {
     "search-history": "/components/common-search-and-history/common-search-and-history",

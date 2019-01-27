@@ -16,7 +16,7 @@
   align-items: center;
   padding: 30rpx 0;
   margin: 0 32rpx;
-  border-bottom: 1rpx solid #F6F6F6FF;
+  border-bottom: 1rpx solid #F6F6F6;
 }
 
 .clear_history_container{
@@ -38,7 +38,7 @@
   font-size: 24rpx;
   flex-shrink: 0;
   text-align: center;
-  color: #333333FF;
+  color: #333333;
 }
 
 .clear{

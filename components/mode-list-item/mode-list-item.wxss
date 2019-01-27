@@ -44,7 +44,7 @@
 }
 
 .play_container {
-  background-color: #F9FAFBFF;
+  background-color: #F9FAFB;
   width: 100%;
   flex-direction: row;
   padding: 24rpx 32rpx;
@@ -53,7 +53,7 @@
 
 .cur_time{
   flex-shrink: 0;
-  color: #BBBBBBFF;
+  color: #BBBBBB;
   font-size: 24rpx;
   line-height: 32rpx;
   margin-right: 30rpx;
@@ -73,6 +73,6 @@
 
 .line{
   width: 100%;
-  background-color: #EEEEEEFF;
+  background-color: #EEEEEE;
   height: 2rpx;
 }

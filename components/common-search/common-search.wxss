@@ -17,7 +17,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background-color: #F9FAFBFF;
+    background-color: #F9FAFB;
     border-radius:38rpx;
     height: 76rpx;
     flex-grow: 1;
@@ -42,13 +42,13 @@
   
   .search_input{
     font-size: 24rpx;
-    color: #333333FF;
+    color: #333333;
     flex-grow: 1;
   }
 
   .search_placeholder{
     font-size: 24rpx;
-    color: #999999FF;
+    color: #999999;
   }
 
 .search_btn{
@@ -57,7 +57,7 @@
     flex-shrink: 0;
     padding: 24rpx 0;
     text-align: center;
-    color: #1A173BFF;
+    color: #1A173B;
     font-weight: bold;
 }
 
