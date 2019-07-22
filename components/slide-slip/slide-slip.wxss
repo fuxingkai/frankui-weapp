@@ -1,0 +1,27 @@
+._sideslip {
+  overflow: hidden;
+}
+
+._sideslip--movable {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+
+.slideslip-left{
+  flex-shrink: 0;
+}
+
+
+.slideslip-right {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}

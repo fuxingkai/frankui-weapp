@@ -1,0 +1,10 @@
+<movable-area class="_sideslip" style="width: {{width}}rpx; height: {{height}}rpx;">
+  <movable-view direction="horizontal" class="_sideslip--movable" out-of-bounds="{{out}}" damping="20" x="{{x}}" style="width: {{width + slideWidth}}rpx; height: {{height}}rpx;" inertia bindchange="bindchange">
+    <view class="slideslip-left" style="width: {{width}}rpx">
+      <slot name="left"></slot>
+    </view>
+    <view class="slideslip-right" >
+      <slot name="right"></slot>
+    </view>
+  </movable-view>
+</movable-area>

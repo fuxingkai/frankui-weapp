@@ -16,7 +16,8 @@
     "pages/call-statistics/call-statistics",
     "pages/call-statistics-detail/call-statistics-detail",
     "pages/comon-search/comon-search",
-    "pages/comon-search-history/comon-search-history"
+    "pages/comon-search-history/comon-search-history",
+    "pages/slide/slide"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -42,5 +43,6 @@
         "selectedIconPath": "images/ic_about_selected.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

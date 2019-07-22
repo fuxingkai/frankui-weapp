@@ -71,6 +71,10 @@ var pageObj = {
         id: 'comon-search-history',
         title: '15，通用搜索和历史搜索',
         navigateUrl: '/pages/comon-search-history/comon-search-history?startDate=2018-11-11&endDate=2018-11-11',
+      }, {
+        id: 'slide',
+        title: '16，侧滑删除',
+        navigateUrl: '/pages/slide/slide',
       }
     ],
 

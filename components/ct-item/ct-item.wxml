@@ -1,0 +1,19 @@
+<slide-slip height="150" show="{{false}}">
+  <view slot="left" class="sideslip-content">
+    <view class="container" data-item="{{item}}" bindtap="onClickItem">
+      <view class="title">{{item.title}}</view>
+      <view class="bottom_container">
+        <view class="number">共{{item.count}}条留言</view>
+        <view class="number">{{item.look}}浏览</view>
+        <button hover-class="none" data-item="{{item}}" open-type="share" catchtap="onClicShare">
+          <image class="share" src="{{'/images/icon_share.png'}}" data-item="{{item}}"></image>
+        </button>
+      </view>
+    </view>
+  </view>
+  <view slot="right" class="sideslip-oprate">
+    <view class='sideslip-red' data-item="{{item}}" bindtap="onClickDelete">删除</view>
+    <view class='sideslip-blue' data-item="{{item}}" bindtap="onClickEdit">编辑</view>
+  </view>
+</slide-slip>
+<view class="line_10" wx:if="{{showLine}}"></view>

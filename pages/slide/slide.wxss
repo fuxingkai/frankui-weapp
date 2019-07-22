@@ -1,0 +1,59 @@
+.container, .top_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.top_container {
+  width: 100%;
+  height: 80rpx;
+  background: #ffffff;
+  padding: 20rpx 25rpx;
+}
+
+.number {
+  color: #09bb07;
+  font-size: 24rpx;
+  flex-shrink: 1;
+}
+
+.des {
+  color: #999999;
+  font-size: 24rpx;
+  flex-grow: 1;
+}
+
+.create {
+  color: #09bb07;
+  font-size: 28rpx;
+  flex-shrink: 1;
+}
+
+.associated {
+  color: #09bb07;
+  font-size: 26rpx;
+  flex-shrink: 1;
+  margin-top: 40rpx; 
+}
+
+.line_10 {
+  height: 20rpx;
+  background-color: #f6f6f6;
+}
+
+.list_container{
+    width: 100%;
+}
+
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+}

@@ -11,6 +11,8 @@
 	"libVersion": "2.3.0",
 	"appid": "wxc8428c65224939d1",
 	"projectname": "frankyui-weapp",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

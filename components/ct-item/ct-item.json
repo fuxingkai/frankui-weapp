@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "slide-slip": "/components/slide-slip/slide-slip"
+  }
+}

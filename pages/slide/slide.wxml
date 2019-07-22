@@ -1,0 +1,10 @@
+<view class="container">
+  <view class='top_container'>
+    <view class="number">{{noReadTotal}}</view>
+    <view class="des">条留言待处理</view>
+    <view class="create" bindtap='onClickCreateCT'>创建留言区</view>
+  </view>
+
+  <view class="line_10"></view>
+  <common-list id="common-list" class="list_container" list="{{cts}}" loadMore="{{loadMore}}" generic:list-item="ct-item" bindonClickListItem="onClickMoreListItem" />
+</view>

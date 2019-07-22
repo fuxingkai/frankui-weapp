@@ -1,0 +1,100 @@
+.container, .bottom_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.container {
+  flex-direction: column;
+  padding: 35rpx 20rpx 15rpx 20rpx;
+}
+
+.title {
+  width: 690rpx;
+  color: #333;
+  font-size: 30rpx;
+  margin-bottom: 15rpx;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bottom_container {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.number {
+  color: #999;
+  font-size: 24rpx;
+}
+
+.share {
+  width: 48rpx;
+  height: 48rpx;
+  flex-shrink: 1;
+}
+
+.line_10 {
+  height: 20rpx;
+  background-color: #f6f6f6;
+}
+
+.sideslip-left {
+  height: 100%;
+  display: flex;
+}
+
+.sideslip-oprate {
+  height: 150rpx;
+  width: 300rpx;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.sideslip-oprate view {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.sideslip-content {
+  background-color: #fff;
+}
+
+.sideslip-blue {
+  background-color: #09bb07;
+  color: #fff;
+}
+
+.sideslip-red {
+  background-color: red;
+  color: #fff;
+}
+
+button {
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+button::after {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
