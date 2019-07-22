@@ -28,7 +28,8 @@
 ![2.gif](https://upload-images.jianshu.io/upload_images/4105840-cb77e09066f5ba26.gif?imageMogr2/auto-orient/strip)
 #### 搜索和历史搜索结合使用
 ![2.gif](https://upload-images.jianshu.io/upload_images/4105840-d4a2c120b07bc130.gif?imageMogr2/auto-orient/strip)
-
+#### 侧滑删除
+![5.gif](https://upload-images.jianshu.io/upload_images/4105840-278986f8415b074d.gif?imageMogr2/auto-orient/strip)
 
 ### 注意要点：
 1，由于部分功能小程序的基础库需要1.9.90才能使用，因此建议使用微信1.9.90以上的基础库
